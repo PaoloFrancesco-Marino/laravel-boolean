@@ -13,12 +13,12 @@
     <header class="main-header">
         {{-- navbar --}}
         <nav class="navbar">
-            <a href="{{ route('static-page.home') }}" class="navbar-brand">Boolean</a>
+            <a @if (Request::route()->getName() == 'static-page.home') class="active" @endif href="{{ route('static-page.home') }}" class="navbar-brand">Boolean</a>
 
             <ul>
-            <li><a href="{{ route('static-page.home') }}">Home</a></li>
+                <li><a href="{{ route('static-page.home') }}">Home</a></li>
                 <li><a href="#">Corso</a></li>
-            <li><a href="{{ route('student.index') }}">Dopo il Corso</a></li>
+                <li><a @if (Request::route()->getName() == 'student.index') class="active" @endif href="{{ route('student.index') }}">Dopo il Corso</a></li>
                 <li><a href="#">Lezione gratuita</a></li>
                 <li><a href="#">Candidatura</a></li>
             </ul>

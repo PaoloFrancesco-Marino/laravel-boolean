@@ -18,9 +18,16 @@ p {
     margin-bottom: 1rem;
 }
 
+a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .875em;
+    color: $font_blue;
+}
+
 .main-content {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 1rem 4rem;
 }
-

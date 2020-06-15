@@ -1,0 +1,22 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+
+        a {
+            padding: .8rem 1rem;
+            border-bottom:  2px solid transparent;
+            transition: border .3s;
+            
+            &.active, &:hover {
+                border-bottom-color: $link_color;
+            }
+        }
+    }
+}

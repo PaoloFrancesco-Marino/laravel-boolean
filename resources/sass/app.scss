@@ -1,3 +1,13 @@
-//
+// setup 
+@import 'partials/vars'; // import vars
+@import 'partials/commons'; // import commons
 
-@import 'partials/commons';
+
+// moduls
+@import  'partials/header'; // import header
+@import 'partials/footer';
+
+
+// component
+@import 'partials/students'; // import studens
+

@@ -22,9 +22,92 @@ p {
   margin-bottom: 1rem;
 }
 
+a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  color: #1b3c59;
+}
+
 .main-content {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 1rem 4rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar ul a {
+  padding: 0.8rem 1rem;
+  border-bottom: 2px solid transparent;
+  transition: border 0.3s;
+}
+
+.navbar ul a.active,
+.navbar ul a:hover {
+  border-bottom-color: #61ce4e;
+}
+
+.main-footer {
+  color: #fff;
+  background-color: #1b3c59;
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.nav-footer ul {
+  text-align: right;
+  list-style: none;
+}
+
+.nav-footer ul li {
+  margin-bottom: 1rem;
+}
+
+.nav-footer ul li:last-child {
+  margin-bottom: 0;
+}
+
+.nav-footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.students {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.students .student {
+  flex-basis: 48%;
+  display: block;
+  color: #333;
+  background: #ccc;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s;
+}
+
+.students .student:hover {
+  transform: translateY(-7px);
 }
 
